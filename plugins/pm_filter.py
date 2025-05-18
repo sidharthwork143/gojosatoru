@@ -83,7 +83,7 @@ async def stream_download(bot, query):
                             InlineKeyboardButton('❌ ᴄʟᴏꜱᴇ ❌', callback_data='close_data')
                              ]]))
                         
-@Client.on_message(filters.private & filters.command("streem"))
+@Client.on_message(filters.private & filters.command("stream"))
 async def reply_stream(client, message):
     reply_message = message.reply_to_message
     user_id = message.from_user.id
@@ -1345,13 +1345,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
     elif query.data == "start":
         buttons = [[
-                        InlineKeyboardButton('☆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ☆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+                        InlineKeyboardButton('⛩️ 𝖥𝗂𝗅𝗆𝗒 𝖬𝖾𝗇', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                     ],[
-                        InlineKeyboardButton('ʙᴀᴄᴋᴜᴘ', url=CHNL_LNK),
-                        InlineKeyboardButton('ɢʀᴏᴜᴘ', url=GRP_LNK)           
+                        InlineKeyboardButton('🎫 𝖯𝗋𝖾𝗆𝗂𝗎𝗆', callback_data='seeplans),
+                        InlineKeyboardButton('🪐 𝖦𝗋𝗈𝗎𝗉', url=GRP_LNK)           
                     ],[                        
-                        InlineKeyboardButton(' ʀᴇғғᴇʀ ', callback_data='reffer'),
-                        InlineKeyboardButton(' ᴄʟᴏꜱᴇ ', callback_data='close_data')
+                        InlineKeyboardButton('⚠️ 𝖣𝖨𝗌𝖼𝗅𝖺𝗂𝗆𝖾𝗋', callback_data='disclaimer'),
+                        InlineKeyboardButton('💲 𝖠𝖽𝗆𝗂𝗇', url=f'https://t.me/GojoXSandman_Bot')
                         ]]
         if IS_VERIFY or IS_SHORTLINK is True:
             buttons.append([
@@ -1564,12 +1564,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
   
     elif query.data == "channels":
         buttons = [[
-            InlineKeyboardButton('⚜️ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⚜️', url=CHNL_LNK)
+            InlineKeyboardButton('⛩️ 𝖥𝗂𝗅𝗆𝗒 𝖬𝖾𝗇', url=CHNL_LNK)
         ],[
-            InlineKeyboardButton('✉️ ʀᴇǫᴜᴇꜱᴛ ɢʀᴏᴜᴘ ✉️', url=GRP_LNK)
+            InlineKeyboardButton('🪐 𝖦𝗋𝗈𝗎𝗉', url=GRP_LNK)
         ],[
-            InlineKeyboardButton('⇇ ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url=CHNL_LNK)
+            InlineKeyboardButton('🔙 𝖡𝖺𝖼𝗄', callback_data='start'),
+            InlineKeyboardButton('💲 𝖠𝖽𝗆𝗂𝗇', url=f'https://t.me/GojoXSandman_Bot')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1604,7 +1604,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if query.from_user.id not in ADMINS:
             return await query.answer("🤙🤙 Ye Tere liye nai He Bro 🤙😘😁", show_alert=True)        
         buttons = [[
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='help')
+            InlineKeyboardButton('🔙 𝖡𝖺𝖼𝗄', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1616,12 +1616,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('• ʙᴏᴛ ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ •', callback_data='admic')
+            InlineKeyboardButton('🧧 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 ', callback_data='admic')
         ], [
-            InlineKeyboardButton('• ᴜꜱᴇʀ •', callback_data='users'),
-            InlineKeyboardButton('• ɢʀᴏᴜᴘ •', callback_data='group')
+            InlineKeyboardButton('😶‍🌫️ 𝖴𝗌𝖾𝗋𝗌 ', callback_data='users'),
+            InlineKeyboardButton('🪐 𝖦𝗋𝗈𝗎𝗉', callback_data='group')
         ], [
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
+            InlineKeyboardButton('🔙 𝖡𝖺𝖼𝗄 𝖳𝗈 𝖧𝗈𝗆𝖾', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -1637,12 +1637,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('‼️ ᴅɪꜱᴄʟᴀɪᴍᴇʀ ‼️', callback_data='disclaimer'),
+            InlineKeyboardButton('⚠️ 𝖣𝖨𝗌𝖼𝗅𝖺𝗂𝗆𝖾𝗋 ', callback_data='disclaimer'),
         ], [
-            InlineKeyboardButton('• ᴏᴡɴᴇʀ •', url=f"https://t.me/{OWNER_USER_NAME}"),
-            InlineKeyboardButton('• ꜱᴛᴀᴛꜱ •', callback_data='stats')
+            InlineKeyboardButton('💲 𝖠𝖽𝗆𝗂𝗇', url=f"https://t.me/{OWNER_USER_NAME}"),
+            InlineKeyboardButton('😚 𝖲𝗍𝖺𝗍𝗌', callback_data='stats')
         ], [
-            InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start')
+            InlineKeyboardButton('🔙 𝖡𝖺𝖼𝗄 𝖳𝗈 𝖧𝗈𝗆𝖾', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
