@@ -83,7 +83,7 @@ async def start(client, message):
                         InlineKeyboardButton('🎫 𝖯𝗋𝖾𝗆𝗂𝗎𝗆', callback_data='seeplans),
                         InlineKeyboardButton('🪐 𝖦𝗋𝗈𝗎𝗉', url=GRP_LNK)                       
                     ],[
-                        InlineKeyboardButton('🎗️ 𝖱𝖾𝖿𝖿𝖾𝗋', callback_data='reffer'),
+                        InlineKeyboardButton('⚠️ 𝖣𝖨𝗌𝖼𝗅𝖺𝗂𝗆𝖾𝗋', callback_data='disclaimer'),
                         InlineKeyboardButton('💲 𝖠𝖽𝗆𝗂𝗇', url=f'https://t.me/GojoXSandman_Bot')
                         ]]
             if IS_VERIFY or IS_SHORTLINK is True:
@@ -146,7 +146,7 @@ async def start(client, message):
                         InlineKeyboardButton('🎫 𝖯𝗋𝖾𝗆𝗂𝗎𝗆', callback_data='seeplans),
                         InlineKeyboardButton('🪐 𝖦𝗋𝗈𝗎𝗉', url=GRP_LNK)                        
                     ],[
-                       InlineKeyboardButton('🎗️ 𝖱𝖾𝖿𝖿𝖾𝗋', callback_data='reffer'),
+                       InlineKeyboardButton('⚠️ 𝖣𝖨𝗌𝖼𝗅𝖺𝗂𝗆𝖾𝗋', callback_data='disclaimer'),
                        InlineKeyboardButton('💲 𝖠𝖽𝗆𝗂𝗇 ', url=f'https://t.me/GojoXSandman_Bot')
                         ]]
             if IS_VERIFY or IS_SHORTLINK is True:
