@@ -78,13 +78,13 @@ async def start(client, message):
             await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, temp.B_NAME))
         if len(message.command) != 2:
             buttons = [[
-                        InlineKeyboardButton('☆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ☆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+                        InlineKeyboardButton('⛩️ 𝖥𝗂𝗅𝗆𝗒 𝖬𝖾𝗇', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                     ],[
-                        InlineKeyboardButton('ʙᴀᴄᴋᴜᴘ', url=CHNL_LNK),
-                        InlineKeyboardButton('ɢʀᴏᴜᴘ', url=GRP_LNK)                       
+                        InlineKeyboardButton('🎫 𝖯𝗋𝖾𝗆𝗂𝗎𝗆', callback_data='seeplans),
+                        InlineKeyboardButton('🪐 𝖦𝗋𝗈𝗎𝗉', url=GRP_LNK)                       
                     ],[
-                        InlineKeyboardButton(' ʀᴇғғᴇʀ ', callback_data='reffer'),
-                        InlineKeyboardButton(' ᴄʟᴏꜱᴇ ', callback_data='close_data')
+                        InlineKeyboardButton('🎗️ 𝖱𝖾𝖿𝖿𝖾𝗋', callback_data='reffer'),
+                        InlineKeyboardButton('💲 𝖠𝖽𝗆𝗂𝗇', url=f'https://t.me/GojoXSandman_Bot')
                         ]]
             if IS_VERIFY or IS_SHORTLINK is True:
                 buttons.append([
@@ -141,13 +141,13 @@ async def start(client, message):
             return
         if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
             buttons = [[
-                        InlineKeyboardButton('☆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ☆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+                        InlineKeyboardButton('⛩️ 𝖥𝗂𝗅𝗆𝗒 𝖬𝖾𝗇', url=f'https://t.me/FILMY_MEN')
                     ],[
-                        InlineKeyboardButton('ʙᴀᴄᴋᴜᴘ', url=CHNL_LNK),
-                        InlineKeyboardButton('ɢʀᴏᴜᴘ', url=GRP_LNK)                        
+                        InlineKeyboardButton('🎫 𝖯𝗋𝖾𝗆𝗂𝗎𝗆', callback_data='seeplans),
+                        InlineKeyboardButton('🪐 𝖦𝗋𝗈𝗎𝗉', url=GRP_LNK)                        
                     ],[
-                       InlineKeyboardButton(' ʀᴇғғᴇʀ', callback_data='reffer'),
-                       InlineKeyboardButton(' ᴄʟᴏꜱᴇ ', callback_data='close_data')
+                       InlineKeyboardButton('🎗️ 𝖱𝖾𝖿𝖿𝖾𝗋', callback_data='reffer'),
+                       InlineKeyboardButton('💲 𝖠𝖽𝗆𝗂𝗇 ', url=f'https://t.me/GojoXSandman_Bot')
                         ]]
             if IS_VERIFY or IS_SHORTLINK is True:
                 buttons.append([
@@ -407,7 +407,7 @@ async def start(client, message):
 
         if data.startswith("TheHappyHour"):
             btn = [[
-                InlineKeyboardButton('📸 sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ 📸', url="https://t.me/Gojo_SatoruJi")
+                InlineKeyboardButton('📸 sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ 📸', url="https://t.me/GojoXSandman_Bot")
             ],[
                 InlineKeyboardButton('☘️ ꜰᴜᴛᴜʀᴇ ☘️', url="https://graph.org/The-Happy-Hour-12-22-2"),
                 InlineKeyboardButton('🔙 ᴄʟᴏꜱᴇ 🔚', callback_data='close_data')
